@@ -11,6 +11,7 @@ import { RhinoCompute } from 'https://cdn.jsdelivr.net/npm/compute-rhino3d@0.13.
 let scene, camera, renderer
 
 // set up 3dm loader
+//Rhino3dm loads rhino objects into the browser
 const loader = new Rhino3dmLoader()
 loader.setLibraryPath( 'https://cdn.jsdelivr.net/npm/rhino3dm@0.15.0-beta/' )
 
@@ -48,7 +49,7 @@ async function init () {
 
     // create a scene and a camera
     scene = new THREE.Scene()
-    scene.background = new THREE.Color(1,1,1)
+    scene.background = new THREE.Color(0x000000, 0)
     camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 )
     camera.position.y = - 50
 
