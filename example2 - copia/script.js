@@ -66,7 +66,6 @@ async function compute() {
     //new value
     trees.push(param3);
 
-
     const res = await RhinoCompute.Grasshopper.evaluateDefinition(
         definition, 
         trees
